@@ -62,13 +62,17 @@ struct ModelRecord {
   4: optional double featureWeight;
   // opaque third party serialization
   5: optional string opaque;
+  // Spline parameters
   6: optional double scale;
   7: optional list<double> weightVector;
   8: optional double minVal;
   9: optional double maxVal;
+  // decision tree split and children
   10: optional double threshold;
   11: optional i32 leftChild;
   12: optional i32 rightChild;
+  // polynomial coefficients
+  13: optional list<double> coefficients;
 }
 
 struct EvaluationRecord {
